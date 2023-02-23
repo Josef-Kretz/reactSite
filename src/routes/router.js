@@ -3,7 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from './root'
 import ErrorPage from '../error-page'
 import Home from '../Home'
-import Contact from '../Contact'
+import Contact, {action as contactAction} from '../Contact'
+
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
                     },
                     {
                         path: 'contact',
-                        element: <Contact />
+                        element: <Contact />,
+                        action: contactAction
                     },
                     {
                         path:'*',
