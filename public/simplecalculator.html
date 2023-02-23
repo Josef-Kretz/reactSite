@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="a simple calculator displaying javascript skills">
+    	<meta name="keywords" content="add,minus,multiply,divide,equals">
+			<meta name="viewport" content="width=device-width, initial-scale:1, shrink-to-fit=no">
+
+		<title>Simple Calculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/simplecalculator.css">
+	</head>
+
+	<body>
+		<h1>Simple Calculator</h1>
+		<section class="calc-con">
+			<form class="calc-form" action="index.html" method="post">
+				<input type="text" name="calcInput" value="" placeholder="Use Buttons" required disabled id="calcInput">
+				<input type="text" name="solved" value="" id='solved' placeholder="Solution">
+				<section class="ops">
+					<button type="button" name="add">+</button>
+					<button type="button" name="sub">-</button>
+					<button type="button" name="mult">*</button>
+					<button type="button" name="divide">/</button>
+				</section>
+				<section class="grid-con">
+					<button type="button" name="1" class="nums">1</button>
+					<button type="button" name="2" class="nums">2</button>
+					<button type="button" name="3" class="nums">3</button>
+					<button type="button" name="4" class="nums">4</button>
+					<button type="button" name="5" class="nums">5</button>
+					<button type="button" name="6" class="nums">6</button>
+					<button type="button" name="7" class="nums">7</button>
+					<button type="button" name="8" class="nums">8</button>
+					<button type="button" name="9" class="nums">9</button>
+					<button type="button" name="CE" id="clear-everything">CE</button>
+					<button type="button" name="0" class="nums">0</button>
+					<button type="button" name="=" id="calculate">=</button>
+				</section>
+			</form>
+		</section>
+		<canvas class="background"></canvas>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+		<script type="text/javascript" src="js/simplecalculator.js"></script>
+	</body>
+</html>

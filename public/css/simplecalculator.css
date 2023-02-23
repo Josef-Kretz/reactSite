@@ -1,0 +1,115 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  max-height: 100vh;
+}
+
+body {
+  text-align: center;
+  font-family: Arial;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+textarea {
+  resize: none;
+}
+
+h1 {
+  font-size:36px;
+  -webkit-text-stroke: 1px #D3D3D3;
+  color: #808080;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+#calcInput,
+#solved {
+  display: block;
+  margin: 0 auto;
+  width: 255px;
+  height: 40px;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+#calcInput {
+  margin-bottom: 15px;
+}
+
+.ops {
+  width: 260px;
+  margin: 25px auto 10px auto;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 1fr;
+  grid-gap: 18px;
+}
+
+.ops button {
+  -webkit-appearance: none;
+  width: 50px;
+  height: 50px;
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-con {
+  width: 260px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid-con button {
+  -webkit-appearance: none;
+  width: 75px;
+  height: 75px;
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.background {
+  position:  absolute;
+  display:  block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #212000;
+  min-height: 700px;
+}
