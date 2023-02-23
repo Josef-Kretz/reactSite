@@ -1,3 +1,6 @@
+import PortCard from './components/PortCard'
+import portfolioList from './components/portfolioList'
+
 const Home = () => {
 
     return <>
@@ -8,9 +11,7 @@ const Home = () => {
             </section>
         </main>
         <section id="portfolio" className="dope-projs">
-            <a href="drumkit.html"><img src={require('./assets/portfolio/drumkit.jpg')} alt="Drumkit Site Snapshot" /></a>
-            <a href="simplecalculator.html"><img src={require('./assets/portfolio/simplecalculator.jpg')} alt="Simple Calculator Site Snapshot" /></a>
-            <a href="horoscope.html"><img src={require('./assets/portfolio/horoscope.jpg')} alt="Horoscope Site Snapshop" /></a>
+            {portfolioList.map(port => <PortCard key={port.link} {...port} />)}
         </section>
     </>
 }
