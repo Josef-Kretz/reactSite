@@ -105,7 +105,7 @@ div.navbar-nav{
 
 .card-img-overlay{
   opacity: 0;
-  transition: opacity 1s linear;
+  transition: opacity 0.5s linear;
 }
 
 .card-img-overlay:hover{
@@ -129,6 +129,59 @@ div.navbar-nav{
   text-align: center;
   padding: 5%;
 }
+/**********************************************/
+/*                  Contact Page              */
+/**********************************************/
+/* CUSTOM ALERT */
+.alertCon.alert{
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  z-index: 9999;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.contactCon{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.contactCon h1{
+  margin: 2% 0;
+}
+
+.formCon{
+  width:70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.formCon li:first-child{
+  list-style: none;
+  margin-left: -20px;
+}
+.formCon ul{
+  margin-top: 5%;
+  line-height: 35px;
+  font-size: 20px;
+}
+.contact{
+  display: flex;
+  flex-flow: column wrap;
+  width: 300px;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+
 
 /**********************************************/
 /*                  Error Page                */
