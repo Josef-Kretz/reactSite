@@ -1,7 +1,7 @@
 const portfolioList = [
     {
         title: 'AniSmash',
-        link: 'https://anismash.onrender.com',
+        link: 'https://anismash.cyclic.app',
         img: require('../assets/portfolio/anismash.jpg'),
         desc: 'MERN full stack app that allows you to check out trending anime and their trailers.'
     },
