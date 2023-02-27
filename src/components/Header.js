@@ -15,16 +15,16 @@ const Header = () => {
                 <Col md={9}>
                     <Nav>
                         <Nav.Item>
-                            <Nav.Link href=''><FaGithub /></Nav.Link>
+                            <Nav.Link href='https://github.com/josef-kretz'><FaGithub /></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href=''><FaTwitter /></Nav.Link>
+                            <Nav.Link href='https://twitter.com/josef_kretz'><FaTwitter /></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href=''><FaAngellist /></Nav.Link>
+                            <Nav.Link href='https://angel.co/u/josef-kretz'><FaAngellist /></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href=''><FaLinkedin /></Nav.Link>
+                            <Nav.Link href='https://www.linkedin.com/in/josef-kretz'><FaLinkedin /></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className='contactLink'>
                             <Nav.Link as={Link} to='/contact'>Contact Me</Nav.Link>
